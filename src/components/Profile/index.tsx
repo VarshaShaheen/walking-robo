@@ -5,7 +5,7 @@ const ProfileIndex = () =>
 {
     const [page, setPage]=useState("profile");
 
-  return (
+    return (
       <div className="prfindex">
          {page === "profile" && <Profile stateChanger={setPage}/>}
          {page === "edit" && <EditProfile stateChanger={setPage} />}

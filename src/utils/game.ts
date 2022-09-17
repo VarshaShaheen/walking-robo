@@ -9,7 +9,7 @@ const animationNameMap: Record<string, string> = {
     "Turn" : "walkAnim",
     "Walking Backwards": "jumpAnim"
 };
-
+``
 export default class Game
 {
     private readonly container: HTMLDivElement;
