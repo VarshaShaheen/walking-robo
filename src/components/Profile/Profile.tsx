@@ -23,7 +23,6 @@ const rows = [
 const Profile = ({stateChanger, ...rest}) =>
 {
     const {user} = useAuth(true);
-
     return (
       <div className="prfcontainer">
         <div className="profile_hero">

@@ -1,22 +1,29 @@
 import * as React from "react";
-import {Avatar, Typography} from "@mui/material";
+import {Avatar} from "@mui/material";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import {baseUrl, filePatch, patch} from "../../api/api";
 import {ChangeEvent, useState} from "react";
+import HookFormWrapper from     "../Form/HookFormWrapper";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import {toast} from "react-toastify";
 import {useAuth} from "../../api/auth";
-import {AuthComponent, AuthState, getAuth, setObj} from "../../api/auth";
+import {getAuth, setObj} from "../../api/authUtils";
 import {DeepPartial} from "../../types/utils";
 
-const schema = yup.object({
-    first_name: yup.string().required().matches(/^[A-Z ]+$/i, {message:"Enter a valid name"}),
-    last_name: yup.string().required().matches(/^[A-Z ]+$/i, {message:"Enter a valid name"}),
+type User = {
+    id: number,
+    email: string; username: string; first_name: string; last_name: string;
+}
 
+const schema = yup.object({
+    name: yup.string().required().matches(/^[A-Z ]+$/i, {message:"Enter a valid name"}),
+    github: yup.string().required().matches(/^(http(s?):\/\/)?(www\.)?github\.([a-z])+\/([A-Za-z0-9]{1,})+\/?$/i, {message:"Enter a valid Github URL"}),
+    twitter:yup.string().required().matches(/(?:https?:)?\/\/(?:www\.|m\.)?twitter\.com\/(\w{2,15})\/?(?:\?\S+)?(?:\#\S+)?$/igm,{message:"Enter Valid Twitter URL"}),
+    linkedin: yup.string().required().matches(/^(http(s)?:\/\/)?([\w]+\.)?linkedin\.com\/(pub|in|profile)/gm, {message:"Enter a valid LinkedIn URL"}),
 }).required();
 
 const uploadImage = (event: ChangeEvent<HTMLInputElement>) =>
@@ -58,6 +65,28 @@ let fileInput: {
 const EditProfile = ({stateChanger, ...rest}) =>
 {
     const {user} = useAuth(true);
+
+    const save = (props: { history: string[]; }) =>
+    {
+        if (!user)
+            return;
+        const access_token = getAuth();
+        console.log(form);
+        return patch(`${baseUrl}/auth/users/me/`, form, {"Authorization": `Bearer ${access_token}`}).then(({results}) =>
+        {
+            setObj("user", results[0]);
+            props.history.push("/profile");
+            toast.success("Successfully edited your details", {
+                position: "bottom-center"
+            });
+        }).catch((error) =>
+        {
+            toast.error(error.details, {
+                position: "bottom-center"
+            });
+        });
+    };
+
     const [form,setForm]=useState({
         name:"",
         bio:"",
@@ -65,7 +94,8 @@ const EditProfile = ({stateChanger, ...rest}) =>
         twitter:"",
         linkedin:""
     });
-    const handleForm=(e)=>{
+    const handleForm=(e: ChangeEvent<HTMLInputElement>)=>{
+        e.preventDefault();
         const value = e.target.value;
         setForm({
             ...form,
@@ -73,6 +103,7 @@ const EditProfile = ({stateChanger, ...rest}) =>
         })
     }
     return (
+
       <div>
           <div className="prfcontainer">
               <h4>Edit</h4>
@@ -110,7 +141,7 @@ const EditProfile = ({stateChanger, ...rest}) =>
                          <h6>LinkedIn Link</h6>
                     <TextField id="standard-basic"  name="linkedin" value={form.linkedin} onChange={handleForm} variant="standard" />
                      </div>
-              <input type="button" className="edtbutton" onClick={()=>console.log(form)} value="Save"/>
+              <input type="button" className="edtbutton" onClick={()=>save()} value="Save"/>
           </div>
       </div>
   );
