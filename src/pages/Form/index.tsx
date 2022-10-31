@@ -15,7 +15,7 @@ const Form = () =>
                 <div className="head">
                    <iframe title="registration" id="table" className="airtable-embed"
                     src="https://airtable.com/embed/shrxVmF8Ve1oQS1wM?backgroundColor=red"
-                    frameBorder="0" width="100%" height="1500"
+                    frameBorder="0" width="100%" height="1700"
                     />
                 </div>
             </div>
