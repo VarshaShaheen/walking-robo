@@ -6,16 +6,16 @@ import "../../styles/form.css";
 
 const Form = () =>
 {
-   const {user,refreshAuth} = useAuth(true);
-   console.log(user,refreshAuth())
+   const {user, refreshAuth} = useAuth(true);
+   console.log(user, refreshAuth());
     return (
         <>
             <Header />
             <div className="main">
                 <div className="head">
-                   <iframe id="table" className="airtable-embed"
+                   <iframe title="registration" id="table" className="airtable-embed"
                     src="https://airtable.com/embed/shrxVmF8Ve1oQS1wM?backgroundColor=red"
-                    frameBorder="0" width="100%" height="500"
+                    frameBorder="0" width="100%" height="1700"
                     />
                 </div>
             </div>

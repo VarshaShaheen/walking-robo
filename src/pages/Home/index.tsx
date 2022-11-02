@@ -40,7 +40,7 @@ export default function Home()
         <>
             <Header hidePath={true}/>
             <div className="main">
-                <h2>“Prototyping the Next Dimension”</h2>
+                <h2>Prototyping the Next Dimension</h2>
                 <p className="description"> XR Lab CUSAT promotes diverse and interdisciplinary
                     research that combines different areas of interest and inquiry.
                     Our goal is to develop innovative, impactful research and applications in
@@ -105,7 +105,7 @@ export default function Home()
                     <h5>26 JUNE 2022</h5>
                     <h4>
                         Thank you, Trebuchet, for the kind support of our research </h4>
-                    <p>computer-supported face-to-face communication, and that will change everything.  At the Futu ....<a href="#" style={{color: "#FF1E56"}}
+                    <p>computer-supported face-to-face communication, and that will change everything.  At the Futu ....<a href="/" style={{color: "#FF1E56"}}
                        className="card-link ms-2">
                         ...read more
                     </a>
