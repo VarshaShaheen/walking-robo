@@ -49,7 +49,7 @@ export default function Home()
                     to make an impact today while paving the way for the future.
 
                 </p>
-                <Button variant="contained" className="btnpink">Learn More</Button>
+                <Button variant="contained" className="btnpink" >Learn More</Button>
             </div>
             <div className="info main">
                 <div className="head">
