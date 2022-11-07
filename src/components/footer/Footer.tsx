@@ -15,7 +15,7 @@ const Footer = () =>
                                 <img src={logo} alt="Cusat Logo" className="img" />
                                 <h5 className="title">Cochin University Of Science and Technology</h5>
                                 <address>
-                                    <h6 className="place">Unviversity Road, South Kalamassery,</h6>
+                                    <h6 className="place">University Road, South Kalamassery,</h6>
                                     <h6 className="place">Kalamassery,Kochi.Kerala 682022</h6>
                                 </address>
                             </div>
@@ -23,11 +23,11 @@ const Footer = () =>
                                 <address>
                                     <h5 className="title">Sasigopalan</h5>
                                     <h6 className="prof mt-3">Director</h6>
-                                    <h6 className="prof">Professor of Head</h6>
-                                    <h6 className="prof">Department of meathematics</h6>
+                                    <h6 className="prof">Professor and Head</h6>
+                                    <h6 className="prof">Department of Mathematics</h6>
                                     <h6 className="prof">Cochin university of Science and Technology</h6>
                                     <br />
-                                    <h6 className="place">sgcusat@gmail.com</h6>
+                                    <h6 className="place">sasigopalan@cusat.ac.in</h6>
                                 </address>
                                 <span className="line none"></span>
                             </div>
