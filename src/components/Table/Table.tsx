@@ -23,10 +23,10 @@ function createData(
 }
 
 const rows = [
-  createData("Robert Hari", "159", "6.0", "24", "Trebuchet", "Mentor 2022"),
-  createData("Robert Hari", "159", "6.0", "24", "Trebuchet", "Mentor 2022"),
-  createData("Robert Hari", "159", "6.0", "24", "Trebuchet", "Mentor 2022"),
-  createData("Robert Hari", "159", "6.0", "24", "Trebuchet", "Mentor 2022"),
+  createData("Sahil Athrij", "https://drive.google.com/file/d/1nsLw79eq9zQc1FJs9FQKqNwVesq6YQU9/view?usp=sharing", "6.0", "24", "External Advisor", "University of Washington"),
+  createData("Akul Santhosh", "https://drive.google.com/file/d/1dSIBeKoW5hPI8XI7ng1DESGDlY1OoxiH/view?usp=sharing", "6.0", "24", "External Advisor", ""),
+  createData("Rajath Jayshankar", "159", "6.0", "24", "External Advisor", ""),
+  createData("Sidharth Sivakumar", "159", "6.0", "24", "External Advisor", ""),
 ];
 
 export default function AcccessibleTable() 
@@ -50,7 +50,7 @@ export default function AcccessibleTable()
                 {row.name}
               </TableCell>
               <TableCell align="right">
-              <a href={row.linkidin} target="_blank" rel="noreferrer">
+              <a href={row.cv} target="_blank" rel="noreferrer">
                 <span className="cv">CV</span>
               </a>
               </TableCell>

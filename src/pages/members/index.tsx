@@ -17,14 +17,18 @@ import {Link} from "react-router-dom";
 export default function CenteredTabs() 
 {
     const [value, setValue] = React.useState(0);
-    const URL = "https://s3-alpha-sig.figma.com/img/2a33/455f/5640245b9824616aa597ba4744dec2ed?Expires=1658102400&Signature=B77hkqEoTyF3f-nr42NdPLFa7PNrtOyjgFdq0DQGRtwFOSVO8-oAS6Q9kqD-aB6d00m1B5UdJ9d2oEBsHAxZrv1CO~g7TsQE8I4GFGsx285d~rDG66BlyrwkEtsXL6v8Xlhrf5~lW45aalNbo0NYzZwW8dQ55ZaQe73VTKnci-KxfSH93n7GFvp6EM6oCfRnWE2OatXm5Eb6Qs~tqYemgZLuNz16pQ2PrPAdu50P-cI0ijN6UygXJ56rQXdVQBOFRlHEhBG01Zp-VXz3IHpbko8hsqvxgGuF-5qZg6j~XlEQnPAd3MKR6soQkYmOsR6JRexBxkdUdx7zLrkn5llU0g__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA";
-
+    const shambu = "https://eoc.trebuchet.one/media/programs/images/WhatsApp_Image_2022-08-09_at_6.17.31_PM.jpeg";
+    const rohit = "https://eoc.trebuchet.one/media/programs/images/WhatsApp_Image_2022-08-08_at_9.05.24_PM.jpeg";
+    const varsha = "https://eoc.trebuchet.one/media/programs/images/WhatsApp_Image_2022-08-08_at_9.11.47_PM.jpeg";
+    const sunith = "https://eoc.trebuchet.one/media/programs/images/profile.jpg";
+    const anand = "https://eoc.trebuchet.one/media/programs/images/WhatsApp_Image_2022-06-06_at_8.48.33_PM.jpeg";
+    const ziyad = "https://eoc.trebuchet.one/media/programs/images/PXL_20220723_130201739.PORTRAIT-02.jpeg"
 
     const handleChange = (event: React.SyntheticEvent, newValue: number) => 
 {
         setValue(newValue);
     };
-    const dummey = "https://s3-alpha-sig.figma.com/img/ad62/8155/4e338fae3f3fd5f3cb50d54acb18138f?Expires=1658102400&Signature=N-gF3z6~hb9H0LN-00C~EJvxPD2Ua13oWD07~aPyjs~2tz4d8ki3PtsxJqYilpNrRw1B3Se6-neRanZzYPm8CO5IAIgw144SIULn6rhG3U2OkEFHbV9lwH5Q~BPx1vQ44-hrvySsYMvC-6QScdHJUXSZb7z5xMB8VMfPhS64pBaXUowg3ifB-B-EieGuprouZqcUBN~8FTog-jLDVn0syl~wa7LvC6V0-dhWaRVFeIT8aQiFNiXsVmiQOfTVzPTbEeq-bfgVWqJQRRKgOU8VNUq8QXygv3XP3sq82-N~5NlNyOlfPE32ydG1~-djfFxxCkkUJCs-HwUIpOarzF3iVQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA";
+    const dummey = "https://eoc.trebuchet.one/media/programs/images/image4.3aaccf30.jpg";
 
     const TabInfo = () => 
 {
@@ -32,9 +36,9 @@ export default function CenteredTabs()
 
             return (
                 <>
-                    <Mentor name="Dr sasigopalan" img={dummey} type="professor of head" mail="sgcusat@gmail.com" position="Faculty" branch="Department of mathematics Cusat" />
-                    <Mentor name="Dr sasigopalan" img={dummey} type="professor of head" mail="sgcusat@gmail.com" position="Advisory Board" branch="Department of mathematics Cusat" />
-                    <Mentor name="Dr sasigopalan" img={dummey} type="professor of head" mail="sgcusat@gmail.com" position="Faculty" branch="Department of mathematics Cusat" />
+                    <Mentor name="Prof.Dr Sasi Gopalan" img={dummey} type="Professor and Head" mail="sasigopalan@cusat.ac.in" position="Faculty" branch="Department of Mathematics, CUSAT" />
+                    {/*<Mentor name="Dr sasigopalan" img={dummey} type="professor of head" mail="sgcusat@gmail.com" position="Advisory Board" branch="Department of mathematics Cusat" />*/}
+                    {/*<Mentor name="Dr sasigopalan" img={dummey} type="professor of head" mail="sgcusat@gmail.com" position="Faculty" branch="Department of mathematics Cusat" />*/}
                 </>
             );
 
@@ -47,28 +51,28 @@ export default function CenteredTabs()
                         <span className="divider"></span>
                     </div>
                     <div className="car mt">
-                        <Card img={URL} alt="college" info="amazing and cool college i recomend you guys to come here and study" name="sree" />
-                        <Card img={URL} alt="college" info="amazing and cool college i recomend you guys to come here and study" name="hari" />
-                        <Card img={URL} alt="college" info="amazing and cool college i recomend you guys to come here and study" name="jhon" />
+                        <Card img={shambu} alt="img" info="Research Scholar Dept Of Mathematics" name="Sambu Raj" />
                     </div>
                     <div className="head mt">
                         <h6>UnderGraduate students</h6>
                         <span className="divider"></span>
                     </div>
                     <div className="car mt">
-                        <Card img={URL} alt="college" info="amazing and cool college i recomend you guys to come here and study" />
-                        <Card img={URL} alt="college" info="amazing and cool college i recomend you guys to come here and study" />
-                        <Card img={URL} alt="college" info="amazing and cool college i recomend you guys to come here and study" />
+                        <Card img={rohit} alt="college" info="Btech CSE, SOE CUSAT" name="Rohit T P" />
+                        <Card img={varsha} alt="college" info="Btech CSE, SOE CUSAT" name="Varsha Shaheen" />
+                        <Card img={sunith} alt="college" info="Btech CSE, SOE CUSAT" name="Sunith V S" />
+                        <Card img={anand} alt="college" info="Btech CSE, SOE CUSAT" name="Anand K Vinu" />
+                        <Card img={ziyad} alt="college" info="Btech CSE, SOE CUSAT" name="Ziyad Kadekkara" />
                     </div>
                     <div className="head mt">
                         <h6>Masters Students</h6>
                         <span className="divider"></span>
                     </div>
-                    <div className="car mt">
-                        <Card img={URL} alt="college" info="amazing and cool college i recomend you guys to come here and study" />
-                        <Card img={URL} alt="college" info="amazing and cool college i recomend you guys to come here and study" />
-                        <Card img={URL} alt="college" info="amazing and cool college i recomend you guys to come here and study" />
-                    </div>
+                    {/*<div className="car mt">*/}
+                    {/*    <Card img={URL} alt="college" info="amazing and cool college i recomend you guys to come here and study" />*/}
+                    {/*    <Card img={URL} alt="college" info="amazing and cool college i recomend you guys to come here and study" />*/}
+                    {/*    <Card img={URL} alt="college" info="amazing and cool college i recomend you guys to come here and study" />*/}
+                    {/*</div>*/}
                 </>
 
             );
