@@ -63,7 +63,7 @@ export default function Home({hidePath}: { hidePath?: boolean })
                             <span className="navcont">Contact</span>
                         </Link>
                          <a href="https://airtable.com/shrxVmF8Ve1oQS1wM">
-                            <input type="button" className="applybutton" value="Apply Now"/>
+                            <input type="button" className="applybutton" value="Join"/>
                          </a>
                     </div>
                 }
