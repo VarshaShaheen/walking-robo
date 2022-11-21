@@ -43,7 +43,8 @@ export default function Home({hidePath}: { hidePath?: boolean })
                             alt="logo"
                         />
                         <i className="fa fa-bars burger"/>
-                        <Link to="/">
+                        <Link to="/"
+                        >
                             <span className="navcont">Home</span>
                         </Link>
                         <Link to="/about">
@@ -61,9 +62,9 @@ export default function Home({hidePath}: { hidePath?: boolean })
                         <Link to="/Contact">
                             <span className="navcont">Contact</span>
                         </Link>
-                         <Link to="/form">
-                         <input type="button" className="applybutton" value="Apply Now"/>
-                           </Link>
+                         <a href="https://airtable.com/shrxVmF8Ve1oQS1wM">
+                            <input type="button" className="applybutton" value="Apply Now"/>
+                         </a>
                     </div>
                 }
 
