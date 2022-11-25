@@ -6,7 +6,7 @@ import {LegacyRef, useEffect, useRef, useState} from "react";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/footer/Footer";
 
-export default function Blog(event?: boolean)
+export default function Blog({event}:{event?: boolean})
 {
 
     const {id} = useParams();
@@ -36,7 +36,7 @@ export default function Blog(event?: boolean)
 
         if (rootRef.current)
         {
-            rootRef.current.innerHTML =event?events?.html || "loading": blog?.html || "Loading...";
+            rootRef.current.innerHTML =event?(events?.html || "loading"): (blog?.html || "Loading...");
         }
 
     }, [blog, rootRef]);

@@ -39,7 +39,7 @@ function App()
           <Route path="/form" element={<Form />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/about" element={<About />} />
-          <Route path="/blogs/:id" element={<Blog event={false}/>} />
+          <Route path="/blogs/:id" element={<Blog event={false} />} />
           <Route path="/events/:id" element={<Blog event={true} />} />
           <Route path="/register" element={<Register />} />
 
