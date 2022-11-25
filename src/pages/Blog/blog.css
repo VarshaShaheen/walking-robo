@@ -13,7 +13,7 @@
 .blog header,
 .blog main,
 .blog footer {
-    max-width: 60vw;
+    max-width: 100vw;
 }
 
 .blog a {

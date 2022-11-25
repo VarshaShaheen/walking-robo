@@ -7,6 +7,7 @@ import Game from "../../utils/game";
 import React, {useEffect, useState} from "react";
 import {Blogs, EventObject, Events} from "../../api/model";
 
+
 export default function Home()
 {
     const [events, setEvents] = useState<EventObject[]>([]);
@@ -49,7 +50,9 @@ export default function Home()
                     to make an impact today while paving the way for the future.
 
                 </p>
+                <a href="https://xr.cusat.ac.in/about">
                 <Button variant="contained" className="btnpink" >Learn More</Button>
+                </a>
             </div>
             <div className="info main">
                 <div className="head">

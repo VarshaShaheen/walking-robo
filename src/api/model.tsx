@@ -28,15 +28,17 @@ export class ExampleObject extends ModelObject
 
 export class EventObject extends ModelObject
 {
+
     cover = "";
     intro = "";
     title = "";
+    html? = "";
 
     constructor(data: Record<string, string | number>, baseUrl = "")
     {
         super(data, baseUrl);
 
-        this.fields = ["id", "cover", "intro", "title"];
+        this.fields = ["id", "cover", "intro", "title", "html"];
         this.getData();
     }
 }
