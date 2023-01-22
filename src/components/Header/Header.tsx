@@ -33,40 +33,6 @@ export default function Home({hidePath}: { hidePath?: boolean })
             }
             <div className="nav">
                 <div id="3root" style={{zIndex: 90, overflow: "hidden"}}/>
-                {(windowSize.innerWidth >= 767) &&
-                    <div className="nav-items">
-                        <img
-                            className="logo"
-                            src={Logo}
-                            height={100}
-                            width={100}
-                            alt="logo"
-                        />
-                        <i className="fa fa-bars burger"/>
-                        <Link to="/"
-                        >
-                            <span className="navcont">Home</span>
-                        </Link>
-                        <Link to="/about">
-                            <span className="navcont">About</span>
-                        </Link>
-                        <a href="/#events">
-                            <span className="navcont">Events</span>
-                        </a>
-                        <a href="/#blogs">
-                            <span className="navcont">Blog</span>
-                        </a>
-                        <Link to="/members">
-                            <span className="navcont">Members</span>
-                        </Link>
-                        <Link to="/Contact">
-                            <span className="navcont">Contact</span>
-                        </Link>
-                         <a href="https://airtable.com/shrxVmF8Ve1oQS1wM">
-                            <input type="button" className="applybutton" value="Join"/>
-                         </a>
-                    </div>
-                }
 
                 <svg
                     id="wave"

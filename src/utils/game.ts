@@ -9,7 +9,7 @@ const animationNameMap: Record<string, string> = {
     "Turn" : "walkAnim",
     "Walking Backwards": "jumpAnim"
 };
-``
+
 export default class Game
 {
     private readonly container: HTMLDivElement;
@@ -74,24 +74,6 @@ export default class Game
 
             return object;
         });
-
-        loader.loadAsync("/texture.fbx").then((object) =>
-        {
-            object.traverse( ( child ) =>
-            {
-                if ( (child as THREE.Mesh).isMesh )
-                {
-                    child.castShadow = false;
-                    child.receiveShadow = true;
-                }
-            } );
-
-            this.scene.add(object);
-
-            object.scale.set(1.8, 1.8, 1.8);
-        } );
-
-
 
         const hLight =  new THREE.HemisphereLight( 0xffffff, 0x444444 );
         hLight.position.set( 0, 200, 0 );
