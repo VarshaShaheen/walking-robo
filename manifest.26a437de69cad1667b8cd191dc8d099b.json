@@ -1,0 +1,79 @@
+{
+  "icons": [
+    {
+      "src": "/icon_512x512.8387bfee5308a3c67b1b6142c4390067.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon_384x384.30b94094c0a35a89e7c30ef26a3e0939.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon_256x256.a0b1527d5a525e251d77ae9297ac650d.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon_192x192.4cada611192c612ffb469cca95852aba.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon_128x128.2c5a9ae3fb0b87e36b29b9c41689be9f.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon_96x96.cc8c4c0f373f707b2ac3236734aa9a62.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon_512x512.11ea9b27d4ecf6098f7c7591743d6ba2.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_384x384.e06a1ab4d9f13ecb56ff1d81356a5af7.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_256x256.e39180ba534bb2dc68d24814e5d34350.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_192x192.f9995bf6d64bdd5aa2c3561381fe7891.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_128x128.853a636898325873805e7a98ec7118e2.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_96x96.40b779a07c615343d083c5eb602dabe5.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "name": "XR Lab CUSAT",
+  "short_name": "XR Lab",
+  "orientation": "any",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "A adipoli lab",
+  "background_color": "#FFFFFF",
+  "theme_color": "#3E64FF",
+  "gcm_sender_id": "569002618626"
+}
